@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+
+:root{
+    --d_teal: #00c4c1;
+    --d_azure: #007eec;
+}
+
+body{
+    font-family: "IBM Plex Sans", sans-serif;
+    background: var(--d_azure);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Red Hat Text", sans-serif;
+}
+
+h1{
+    font-size: calc(2rem + 1.5vw);
+    color: #ffffff;
+}
+
+#card{
+    max-width: 800px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.square{
+    border: 3px solid var(--d_azure);
+    position: relative;
+    background: #ffffff;
+}
+.square:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.squaretext{
+    position: absolute;
+    top:0;
+    padding: 10px;
+    z-index: 1;
+}
+
+.deebly{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: auto;
+    opacity: 25%;
+    z-index: 999;
+}
+
+.deebly.active{
+    width: 100%;
+}
